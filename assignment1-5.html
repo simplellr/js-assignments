@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>leapyear</title>
+    </head>
+    <body>
+        <input id="val">
+      <input type="Submit" onclick="leapYears();">
+        <p id="results"></p>
+        <script>
+            var yearsPrinted = 0;
+            var currentYear = 2022; //maybe these variables should be declared inside the function
+
+           function leapYears() {
+           while (yearsPrinted < 20) { //instead of "30", you can have a var howManyLeapYears for how many leap years we want printed
+           if ((currentYear % 4 === 0))
+           {
+            //can we simplify the line above?
+             document.write(currentYear);
+              yearsPrinted++;
+              currentYear++;
+              
+            } else {
+              currentYear++;
+            }
+            
+        }
+        }
+        </script>
+    </body>
+</html>
