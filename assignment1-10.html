@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fibonacci  series</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            const number = parseInt(prompt('Enter the number of terms: '));
+            let n1 = 0, n2 = 1, nextno;
+            console.log('Fibonacci Series:');
+            for (let i = 1; i <= number; i++) {
+           document.getElementById("demo").innerHTML= n1;
+           nextno = n1 + n2;
+            n1 = n2;
+            n2 = nextno;
+             }
+        </script>
+    </body>
+</html>

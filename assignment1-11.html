@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>reverses an array</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+function reverse_a_value(value){
+    value = value +""
+    return value.split('').reverse().join('');
+    }
+    document.getElementById("demo").innerHTML="the reverse of a value is "+reverse_a_value("abcd");
+        </script>
+    </body>
+</html>
