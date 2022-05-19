@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sum of numbers</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var arr1 = [10,20,30,40,50]
+            
+            function mainfunction(arr){
+              var sum = 0;
+              for (var i=0;i<arr.length;i++){
+              sum = sum+arr[i]
+                }
+              return sum
+              }
+           document.getElementById("demo").innerHTML=mainfunction(arr1);
+           
+        </script>
+    </body>
+</html>
