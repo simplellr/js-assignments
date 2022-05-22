@@ -1,0 +1,116 @@
+1.
+class Rectangle {
+    constructor(width, height, color) {
+          this.width = width;
+         this.height = height;
+    }
+
+}
+let rect = new Rectangle(3, 4);
+let rect1 = new Rectangle(6, 5);
+let rect2= new Rectangle(5, 1);
+let rect3 = new Rectangle(14, 15);
+console.log(rect);
+console.log(rect1);
+console.log(rec2);
+console.log(rect3);
+
+
+
+2.
+Rectangle.prototype.getArea = function()
+{
+    console.log("Getting Area using prototype property : " +this.width * this.height);
+}
+
+console.log(Rectangle.prototype);
+rect.getArea();
+rect1.getArea(); 
+rect2.getArea();
+rect3.getArea();
+
+
+
+4.
+var obj = {
+    firstName : "vollala",
+    lastName : "pragna"
+};
+console.log(obj);
+
+
+5.
+var obj = {
+    firstName : "vollala",
+    middleName : "pragna",
+    lastName : "netha"
+};
+console.log(obj);
+
+
+6.
+var str = '({"fname" : "vollala", "lname" : "pragna"})';
+
+var obj = eval(str);
+
+document.write(obj.fname + " " + obj.lname);
+
+7.
+var json = '{"name": "pragna", "age": 23, "country": "India"}';
+var obj = JSON.parse(json);
+document.write(obj.name);
+document.write(obj.age);
+document.write(obj.country);
+
+
+8.
+function Person(firstName,lastName,age,skills,dateOfbirth,address,married,profession)
+{
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.skills = skills;
+    this.dateOfbirth = dateOfbirth;
+    this.address = address;
+    this.married = married;
+    this.profession = profession;
+}
+
+Person1 = new Person("vollala","pragna",23,['javascript','c#'],"10/07/1999",{city:"jagitial",pincode:505532},"false","AnalystA4");
+Person2 = new Person("vollala","pragathi",25,[".ruby","c++"],"12/02/1995",{city:"hyderabad",pincode:505001},"true","AnalystA5");
+
+print=function()       //printing the object using Global print method.
+{
+    console.log(Person1);
+    console.log(Person2);
+}();//function call
+
+9.
+function Person(firstName,lastName,age,skills,dateOfbirth,address,married,profession)
+{
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.skills = skills;
+    this.dateOfbirth = dateOfbirth;
+    this.address = address;
+    this.married = married;
+    this.profession = profession;
+}
+Asif = new Person("Asif","Ali",24,['java','c#'],"01/01/1969",{city:"Bangalore",pincode:67856},"false","AnalystA4");
+Twinkle = new Person("Twinkle",55,["html","css"],"05/06/1975","false","JrAnalyst");
+
+
+var Twinkle = Object.create(Asif); //inheriting the common properties/storing Akshay object in Twinkle
+print = function()
+{
+    console.log(Akshay);
+    console.log(Twinkle.lastName);
+    console.log(Twinkle.address);
+    console.log(Aarav.lastName);
+    console.log(Aarav.skills);
+    console.log(Aarav.address);
+    console.log(Aarav.firstName);
+}();
+
+
